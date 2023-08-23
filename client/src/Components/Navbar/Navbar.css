@@ -1,0 +1,116 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    z-index: 10000;
+    background: white;
+}
+
+.nav-conatiner{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.nav-conatiner .logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-conatiner .logo .l-top{
+    display: flex;
+    align-items: center;
+}
+
+.nav-conatiner .logo img{
+    width: 50px;
+}
+
+.nav-conatiner .logo .l-bottom span{
+    font-size: 14px;
+}
+
+.nav-conatiner .links{
+    font-size: 19px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-conatiner .links .link{
+    transition: 0.3s;
+    font-size: 19px;
+}
+
+.nav-conatiner .links .link:hover{
+    color: black;
+}
+
+.nav-conatiner .links .addmission{
+    padding: 15px;
+    /*background: blue;*/
+    background: #03bac7;
+    color: white;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.nav-conatiner .links .addmission:hover{
+    border: 1px solid #03bac7;
+    background: transparent;
+    color: #03bac7;
+}
+
+.nav-conatiner .menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-conatiner{
+        width: 100%;  
+    }
+
+    .nav-conatiner .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-conatiner .menu-icon .menu-link{
+        font-size: 40px;
+    }
+
+    .nav-conatiner .links{
+        position: absolute;
+        top: 3rem;
+        right: 4rem;
+        color: black;
+        background: white;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        border-radius: 10px;
+        align-items: flex-start;
+        box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.4);
+        transition: all 300ms ease-in;     
+    }
+
+    .nav-conatiner .links .addmission{
+        width: 100%;
+    }
+}

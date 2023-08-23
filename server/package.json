@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "brave sub data, airtime, cable tv, electricity vendor",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "BUY DATA AT AFFORDABLE RATES",
+    "BUY AIRTIME AT AFFORDABLE RATES",
+    "BUY CABLE TV SUBSCRIPTION",
+    "BUY ELECTRICITY"
+  ],
+  "author": "success akinyemi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "flutterwave-node-v3": "^1.1.5",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mailgen": "^2.0.27",
+    "mongodb-memory-server": "^8.12.1",
+    "mongoose": "^7.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.21",
+    "otp-generator": "^4.0.1",
+    "paystack": "^2.0.1"
+  }
+}

@@ -1,0 +1,556 @@
+:root{
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --backgroung-color: #f6f6f9;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-light: rgba(132, 139, 200, 0.18);
+
+    --card-border-radius: 2rem;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+ 
+.pending{
+    color: var(--color-danger);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background:var(--backgroung-color);
+    position: relative;
+}
+
+.dashboard .content{
+    width: 98%;
+    height: 100%;
+    display: grid;
+    margin: 0 auto;
+    gap: 1rem;
+    grid-template-columns: 16rem auto 21rem;
+}
+
+
+.dashboard .text-muted{
+    color: var(--color-info-dark);
+}
+
+/**  POPUP COMPONENT */
+
+
+  /* POPUP COMPONENT */
+  
+  .dashboard .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease-in-out;
+    z-index: 9999;
+  }
+  
+  .dashboard .popup.active {
+    top: 50%;
+  }
+  
+  .dashboard .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9998;
+  }
+  
+  .dashboard .popup-content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .dashboard .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .dashboard .popup-close:hover {
+    opacity: 0.8;
+  }
+
+/**  END POPUP COMPONENT */
+
+/** SIDEBAR */
+.dashboard .sidebar{
+    height: 96vh;
+    border-radius: 10px;
+    margin-top: 2vh;
+    padding: var(--padding-1);
+    position: relative;
+    background: white;
+    padding: 20px;
+    box-shadow: -2px 4px 16px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 4px 16px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 16px 2px rgba(0,0,0,0.75);
+}
+
+.dashboard .sidebar .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard .sidebar .top .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dashboard .sidebar .top .logo img{
+    width: 100px;
+}
+
+.dashboard .sidebar .top .profile{
+    min-height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin-top: 10px;
+}
+
+.dashboard .sidebar .top .profile .profile_img{
+    width: 50px;
+    height:50px;
+}
+
+.dashboard .sidebar .info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dashboard .sidebar .info h4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dashboard .sidebar .info span{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.dashboard .sidebar .fundingBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 15px;
+    background: purple;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dashboard .sidebar .menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.dashboard .sidebar .menu .menu_link{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.dashboard .sidebar .menu .menu_link:hover{
+    background: rgba(115, 128, 236,0.3);
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+
+.dashboard .sidebar .logoutBtn{
+    margin-top: auto;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/** END OF SIDEBAR AREA */
+
+
+/** MAIN AREA */
+
+.dashboard .main{
+    padding: var(--padding-1);
+}
+
+.dashboard .main h2{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.dashboard .dashboard_content{
+    width: 100%;
+    padding: var(--padding-1);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.dashboard .dashboard_content hr{
+    border: 1px solid black;
+    opacity: 0.7;
+}
+
+.dashboard .dashboard_content .cards{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.dashboard .dashboard_content .cards .card{
+    flex: 1;
+    padding: var(--card-padding);
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.dashboard .dashboard_content .cards .card img{
+    width: 60px;
+}
+
+.dashboard .dashboard_content .actions{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.dashboard .dashboard_content .actions h2{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.dashboard .dashboard_content .actions .action_contents{
+    margin-left: 30px;
+}
+
+.dashboard .dashboard_content .actions .action_contents .packs{
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard .dashboard_content .actions .action_contents .packs .pack{
+    padding: 8px 15px;
+    border: 1px solid var(--color-info-dark);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboard .dashboard_content .actions .action_contents .packs .pack:hover{
+    color: white;
+    background: var(--color-info-dark);
+}
+/* Transaction Table*/
+.dashboard .transactionTable{
+    margin-top: 2rem;
+}
+
+.dashboard .transactionTable h2{
+    margin-bottom: 0.8rem;
+}
+
+.dashboard .transactionTable table{
+    background: white;
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.dashboard .transactionTable table:hover{
+    box-shadow: none;
+}
+
+.dashboard .transactionTable table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-info-light);
+    color: var(--color-info-dark);
+}
+
+.dashboard .transactionTable table tbody tr:last-child td{
+    border: none;
+}
+
+.dashboard .transactionTable .table-btn{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+/** END OF MAIN AREA */
+
+.dashboard aside{
+    margin-top: 1.4rem;
+}
+
+.dashboard aside .top{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.dashboard aside .top .day{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.dashboard aside .top .day p {
+    font-weight: 600;
+}
+
+.dashboard aside .recentUpdates{
+    margin-top: 1rem;
+}
+
+.dashboard aside .recentUpdates h2{
+    margin-bottom: 0.8rem;
+}
+
+.dashboard aside .recentUpdates .updates{
+    background: white;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition:  all 300ms ease;
+}
+
+.dashboard aside .recentUpdates .updates:hover{
+    box-shadow: none;
+}
+
+.dashboard aside .recentUpdates .updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard aside .top .menuBtn{
+    display: none;
+}
+
+.dashboard .sidebar .closeBtn{
+    display: none;
+}
+
+/**
+.dashboard .menu-icon{
+    display: none;
+}
+*/
+
+@media (max-width: 1200px) {
+    .dashboard .content{
+        width: 94%;
+        grid-template-columns: 11rem auto 20rem;
+    }
+
+    .dashboard .logo h2{
+        display: none;
+    }
+
+    .dashboard .sidebar .fundingBtn{
+        padding: 9px 10px;
+        margin-top: 1.5rem;
+    }
+
+    .dashboard .dashboard_content .cards{
+        flex-direction: column;
+    }
+
+    .dashboard .dashboard_content .actions h2{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .dashboard .transactionTable{
+        width: 75%;
+        transform: translateX(-55%);
+        position: absolute;
+        left: 50%;
+        margin: 2rem 0 0 8.8rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .dashboard{
+        width: 100vw;
+    }
+
+    .dashboard .content{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard .sidebar{
+        min-height: 100vh;
+        position: fixed;
+        left: -100%;
+        background: white;
+        width: 18rem;
+        z-index: 10;
+        box-shadow: -2px 4px 16px 2px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -2px 4px 16px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px 4px 16px 2px rgba(0,0,0,0.75);
+        height: auto;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    .dashboard .sidebar .logoutBtn{
+        margin-top: 70px;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 5px;
+        }
+    }
+
+    .dashboard .sidebar.menu-open{
+        display: block;
+    }
+
+    .dashboard .sidebar .logo h2{
+        display: inline;
+    }
+
+    .dashboard .sidebar .closeBtn{
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 14rem;
+        font-size: 30px;
+    }
+
+    .dashboard .main{
+        margin-top: 5rem;
+    }
+    .dashboard .main .actions .action_contents .packs{
+        gap: 10px;
+    }
+
+    .dashboard .dashboard_content .actions .action_contents .packs .pack{
+        padding: 4px 7px;
+    }
+
+    .dashboard .main .transactionTable{
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+
+    .dashboard .transactionTable h2{
+        text-align: center;
+    }
+
+    .dashboard .transactionTable table{
+        width: 100%;
+        margin: 1rem;
+
+    }
+
+    .dashboard .transactionTable table tbody tr td:nth-child(2),
+    .dashboard .transactionTable table thead tr th:nth-child(2),
+    .dashboard .transactionTable table tbody tr td:nth-child(3),
+    .dashboard .transactionTable table thead tr th:nth-child(3),
+    .dashboard .transactionTable table tbody tr td:nth-child(4),
+    .dashboard .transactionTable table thead tr th:nth-child(4){
+        display: none;
+    }
+
+    .dashboard aside{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+    
+    .dashboard aside h2{
+        text-align: center;
+    }
+
+    .dashboard aside .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: white;
+        width: 100%;
+        margin: 0;
+        z-index: 8;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+    .dashboard aside .top .menuBtn{
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        left: 1rem;
+    }
+
+    .dashboard aside .top .menuBtn .menuIcon{
+        font-size: 40px;
+    }
+
+}

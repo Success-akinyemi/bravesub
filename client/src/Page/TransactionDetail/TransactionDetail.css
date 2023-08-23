@@ -1,0 +1,27 @@
+.transactionDetail-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.transactionDetail-content span{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.transactionDetail-content span h2{
+    font-size: 30px;
+}
+
+.transactionDetail-content .h2{
+    font-size: 23px;
+}
+
+.transactionDetail-content small{
+    margin-top: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,125 @@
+.profile{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgb(233, 239, 239);
+}
+
+.homelink{
+    position: absolute;
+    top: -370px;
+    right: 100px;
+}
+
+.homelink .home{
+    font-size: 40px;
+    cursor: pointer;
+    color: #9900ff;
+}
+
+.profile .profile_container{
+    height: 650px;
+    width: 700px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .profile_container h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.profile .profile_container form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile .profile_container form div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile .profile_container form div .div1{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .profile_container form .profile_img{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.profile .profile_container .avatar,
+.profile .profile_container.profilePic{
+    width: 80px;
+    height: 80px;
+}
+
+.profile .profile_container form label{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.profile .profile_container form input{
+    width: 100%;
+    height: 40px;
+    background: white;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.profile .profile_container form button{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: #9900ff;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.profile .profile_container form button:hover{
+    background: #9900ffaf;
+}
+
+.profile .profile_container p{
+    margin-top: auto;
+    color: black;
+}
+
+.profile .profile_container .link{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+    .profile .profile_container{
+        max-width: 96vw;
+    }
+
+    .profile .profile_container form,
+    .profile .profile_container form div{
+        display: flex;
+        flex-direction: column;
+    }
+}

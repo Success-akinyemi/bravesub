@@ -1,0 +1,55 @@
+.sectionIntro{
+    text-align: center;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.sectionIntro span{
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.sectionIntro h1{
+    font-size: 60px;
+    color: var(--bg-color);
+}
+
+.home .homeCards{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.home .homeCards .card{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #03bac7;
+    color: white;
+    border-radius: 20px;
+}
+
+.home .homeCards .card span{
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home .homeCards .card p{
+    display: flex;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 768px){
+    .home .homeCards{
+        flex-direction: column;
+    }
+}

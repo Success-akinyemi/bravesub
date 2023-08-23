@@ -1,0 +1,46 @@
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+form .select1,
+form .select2{
+    width: 100%;
+    padding: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form .formInput,
+form .amount_input{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+form .submitBtn{
+    width: 100%;
+    padding: 10px;
+    background: purple;
+    color: white;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+    border-radius: 10px;
+}
+
+form .submitBtn:hover{
+    transform: scale(0.95);
+}
+
+form h2{
+    font-size: 17px;
+    color: red;
+}
