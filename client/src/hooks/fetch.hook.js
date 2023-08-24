@@ -20,7 +20,7 @@ export function useFetch(query){
                 const { data, status} = !query ? await axios.get(`api/user/${email}`) : await axios.get(`/api/${query}`) 
                 
                 
-                console.log('data from hooks', data)
+                //console.log('data from hooks', data)
                 if (status === 200) {
                     setData({ isLoading: false, apiData: data, status: status, serverError: null })
                 } else {
