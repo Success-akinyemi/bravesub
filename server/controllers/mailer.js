@@ -20,8 +20,8 @@ let transporter = nodemailer.createTransport(nodeConfig);
 let MailGenerator = new Mailgen({
     theme: 'default',
     product: {
-        name: "Mediplus",
-        link: 'https://mailgen.js/'
+        name: "BraveSub",
+        link: 'https://bravesub.com.ng'
     }
 })
 
@@ -40,8 +40,8 @@ export const registerMail = async (req, res) => {
     var email= {
         body: {
             name: username,
-            intro: text || 'Welcome to Medicare we are please to have you',
-            outro: 'Need help or question? Just reply to this mail.'
+            intro: text || 'Welcome to Brave Sub we are please to have you with us. But Data, Airtime, Cable Tv Subscription, Electricity Easily and fast with us',
+            outro: 'Need help or question? Just reply to this mail. or chat 09033626014 on whatsapp'
         }
     }
 
