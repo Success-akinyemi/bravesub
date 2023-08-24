@@ -108,8 +108,8 @@ function AccountFunding() {
             
             <label>Amount:</label>
             <input type='number' className='amount_input' value={amountValue} onChange={(e) => setAmountValue(e.target.value)} placeholder='Amount' />
-            <h2 className='errorMsg'>{amountValue < 100 ? 'Minimium Amount is NGN 100' : ''}</h2>
-            <button type='submit' className='submitBtn' disabled={amountValue < 100 || isLoadingAnimation} >
+            <h2 className='errorMsg'>{amountValue < 500 ? 'Minimium Amount is NGN 500' : ''}</h2>
+            <button type='submit' className='submitBtn' disabled={amountValue < 500 || isLoadingAnimation} >
             {isLoadingAnimation ? 'Please Wait' : 'Pay'}
             </button>
           </form>
