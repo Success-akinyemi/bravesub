@@ -1,12 +1,17 @@
+.hero{
+    width: 100vw;
+}
 
 .hero-container{
     margin-top: 75px;
+    width: 100vw;
     height: 100vh;
     position: relative;
     background: url('../../assest/logo1.jpg');
     object-fit: cover;
     background-size: cover;
     overflow: hidden;
+    overflow-y: hidden;
     align-items: center;
     justify-content: center;
     display: flex;

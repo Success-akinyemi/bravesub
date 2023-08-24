@@ -151,8 +151,8 @@ function Dashboard() {
         <CloseIcon className='closeBtn' onClick={() => setMenuOpen((prev)=>!prev)} />
         <div className='top'>
           <div className='logo'>
-            <img src={Logo} alt='Logo' className='dashboard_img'/>
-             <h2>Smart<span>Hub</span></h2>
+          {/*<img src={Logo} alt='Logo' className='dashboard_img'/>*/}
+             <h2>Brave<span>Sub</span></h2>
           </div>
 
           <div className='profile'>
