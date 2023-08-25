@@ -8,6 +8,7 @@
     height: 100vh;
     position: relative;
     background: url('../../assest/logo1.jpg');
+    background-position: center;
     object-fit: cover;
     background-size: cover;
     overflow: hidden;

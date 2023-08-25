@@ -66,7 +66,7 @@ function userLogout(){
   return (
     <div className='profile'>
       <Link to='/dashboard' className='homelink'>
-        <HomeIcon className='home'/>
+        <HomeIcon className='home'/> <span>Return to Dashboard</span>
       </Link>
 
       <Toaster position='top-center' reverseOrder={false}></Toaster>

@@ -3,6 +3,7 @@
     height: 80vh;
     background: url('../../assest/logo.png');
     background-size: cover;
+    background-position: center;
     object-fit: cover;
     position: relative;
     display: flex;

@@ -164,6 +164,8 @@ function DataComponent() {
         />
       )}
       {apiData?.acctBalance < amountValue && <h2 className='errorMsg'>Insuffcient Fund</h2>}
+      
+      
       <input required className='formInput' placeholder='Phone Number' type='number' value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/>
 
       {amountValue && (
