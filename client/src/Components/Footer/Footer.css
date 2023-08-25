@@ -62,6 +62,11 @@
     align-items: center;
 }
 
+.footer-container .footer-content .f-one .logo .l-top h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .footer-container .footer-content .f-one .logo img{
     width: 50px;
 }
