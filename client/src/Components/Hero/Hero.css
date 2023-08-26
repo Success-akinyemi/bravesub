@@ -105,6 +105,10 @@
     }
 
     .hero-container{
+        background: none;
+    }
+
+    .hero-container{
         object-fit: contain;
         background-size: cover;
         display: flex;
