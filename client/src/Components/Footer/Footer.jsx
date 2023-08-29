@@ -34,9 +34,9 @@ function Footer() {
                         </span>
 
                         <div className="socials">
-                            <a href="www.twitter.com" target='_blank'><TwitterIcon className='icon' /></a>
+                            {/**<a href="www.twitter.com" target='_blank'><TwitterIcon className='icon' /></a> */}
                             <a href="www.facebook.com" target='_blank'><FacebookIcon className='icon' /></a>
-                            <a href="www.instagram.com" target='_blank'><InstagramIcon className='icon' /></a>
+                            <a href="https://www.instagram.com/bravesub_" target='_blank'><InstagramIcon className='icon' /></a>
                             <a href="https://wa.me/2349033626014?text=Hello Bravesub" target='_blank'><WhatsAppIcon className='icon' /></a>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ function Footer() {
                             </div>
 
                             <div className="card">
-                                <a href="tel:2349059309831" target='_blanks'>
+                                <a href="tel:2349033626014" target='_blanks'>
                                     <LocalPhoneIcon className='icon' />
                                     <p>09033626014</p>
                                 </a>

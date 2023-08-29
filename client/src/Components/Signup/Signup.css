@@ -9,7 +9,7 @@
     .formContainer .box{
         position: relative;
         width: 380px;
-        height: 520px;
+        height: 550px;
         background: gray;
         border-radius: 8px;
         overflow: hidden;
@@ -21,7 +21,7 @@
         position: absolute;
         top: -50%;
         left: -50%;
-        height: 420px;
+        height: 450px;
         width: 430px;
         /*background: linear-gradient(0deg,transparent,#45f3ff, #45f3ff);*/
         background: linear-gradient(0deg,transparent, var(--purple-color), var(--purple-color));

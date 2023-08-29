@@ -99,7 +99,7 @@ function userLogout(){
 
                 <div className='div1'>
                   <label>Email Address:</label>
-                  <input {...formik.getFieldProps('email')} type='email' placeholder='Email'/>
+                  <input {...formik.getFieldProps('email')} type='email' placeholder={apiData?.email} disabled={apiData?.email} />
                 </div>
               </div>
 
