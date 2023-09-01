@@ -13,8 +13,22 @@ import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import { AuthorizeUser,ProtectRoute } from './middleware/auth'
 import LoadingAnimationPage from './Components/LoadingAnimationPage/LoadingAnimationPage';
 import TransactionDetail from './Page/TransactionDetail/TransactionDetail';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    if ('IntersectionObserver' in window) {
+      // Use IntersectionObserver for modern browsers
+      const observer = new IntersectionObserver((entries) => {
+        // Handle intersection events here
+      });
+      // Use the observer as needed
+    } else {
+      // Fallback for older browsers
+      // Implement an alternative behavior for older browsers
+      alert('Your browser is outdated. Please update or use another browser.');
+    }
+  }, []);
   
   const token = localStorage.getItem('token')
 
