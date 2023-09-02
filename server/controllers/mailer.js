@@ -40,7 +40,7 @@ export const registerMail = async (req, res) => {
     var email= {
         body: {
             name: username,
-            intro: text || 'Welcome to Brave Sub we are please to have you with us. But Data, Airtime, Cable Tv Subscription, Electricity Easily and fast with us',
+            intro: text || 'Welcome to Brave Sub we are please to have you with us. Buy Data, Airtime, Cable Tv Subscription, Electricity Easily and fast with us',
             outro: 'Need help or question? Just reply to this mail. or chat 09033626014 on whatsapp'
         }
     }
