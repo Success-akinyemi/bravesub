@@ -365,8 +365,14 @@ export async function verifyPaymentCallback(req, res) {
 
       const user = await UserModel.findOne({ email });
 
-      
+
+
       if (user) {
+
+        if(parseFloat(amount) > user.acctBalance){
+          return res.status(400).json({error: 'INSUFFIENT FUNDS'})
+        }
+        
         const airtimeResponse = await axios.post(`
           ${process.env.CK_URL}/APIAirtimeV1.asp?UserID=${process.env.CK_USER_ID}&APIKey=${process.env.CK_API_KEY}&MobileNetwork=${networkCode}&Amount=${amount}&MobileNumber=${userPhoneNumber}&CallBackURL=${process.env.CALLBACK_URL}
         `);
@@ -496,11 +502,11 @@ export async function handleData(req, res){
     const user = await UserModel.findOne({ email })
 
       
-  if(amount > user.acctBalance){
-    return res.status(400).json({error: 'INSUFFIENT FUNDS'})
-  }
-
+    
     if(user){
+      if(parseFloat(amount) > user.acctBalance){
+        return res.status(400).json({error: 'INSUFFIENT FUNDS'})
+      }
 
       if(buyType === 'CG'){
         const CGdataResponse = await axios.post(`
@@ -695,6 +701,11 @@ export async function handleCableTvSubscription(req, res){
     //console.log(process.env.CK_USER_ID)
     //console.log(process.env.CK_API_KEY)
     if(user){
+
+      if(parseFloat(amount) > user.acctBalance){
+        return res.status(400).json({error: 'INSUFFIENT FUNDS'})
+      }
+
       const cableTvResponse = await axios.post(`
       ${process.env.CK_URL}/APICableTVV1.asp?UserID=${process.env.CK_USER_ID}&APIKey=${process.env.CK_API_KEY}&CableTV=${cableTv}&Package=${selectedCableTvCode}&SmartCardNo=${smartCardNumber}&PhoneNo=${userPhoneNumber}&CallBackURL=${process.env.CALLBACK_URL}
       `)
@@ -778,6 +789,7 @@ export async function handleCableTvSubscription(req, res){
     }
     else{
       console.log('No User Found')
+      return res.status(400).json({error: 'USER NOT FOUND'})
     }
 
     res.json(cableTvResponse.data)
@@ -821,6 +833,11 @@ export async function buyElectricBill(req, res){
     const user = await UserModel.findOne({ email })
 
     if(user){
+
+      if(parseFloat(amount) > user.acctBalance){
+        return res.status(400).json({error: 'INSUFFIENT FUNDS'})
+      }
+      
       const buyElectricResponse = await axios.post(`
       ${process.env.CK_URL}/APIElectricityV1.aspUserID=${process.env.CK_USER_ID}&APIKey=${process.env.CK_API_KEY}&ElectricCompany=${electricCompany}&MeterType=${userMeterType}&MeterNo=${userMeterNumber}&Amount=${amount}&PhoneNo=${userPhoneNumber}&CallBackURL=${process.CALLBACK_URL}
       `)
