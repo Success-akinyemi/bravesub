@@ -495,6 +495,10 @@ export async function handleData(req, res){
 
     const user = await UserModel.findOne({ email })
 
+      
+  if(amount > user.acctBalance){
+    return res.status(400).json({error: 'INSUFFIENT FUNDS'})
+  }
 
     if(user){
 
@@ -674,10 +678,12 @@ export async function handleData(req, res){
     }
     else{
       console.log('No User Found')
+      return res.status(400).json({error: 'USER NOT FOUND'})
     }
     
   } catch (error) {
     console.log(error)
+    return res.status(500).json('FAILED>>>',error)
   }
 }
 
