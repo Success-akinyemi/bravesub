@@ -35,6 +35,7 @@ router.route('/verifyPaymentCallback').post(controller.verifyPaymentCallback) //
 router.route('/paystackWebhook').post(controller.paystackWebhook) // verify payment webhook
 router.route('/getAllTransactionOfAUser/:email').get(controller.getAllTransactionOfAUser) // Get all user transactions records 
 router.route('/getSpecificTransactionOfAUser/:id').get(Auth, controller.getSpecificTransactionOfAUser) // Gell a user specific transactions records
+router.route('/getAllRevenue').get(Auth, controller.getAllRevenue) // Gell All revenue
 router.route('/getLastMonthRevenue').get(Auth, controller.getLastMonthRevenue) // Gell Last month revenue
 router.route('/getLastSevenDaysRevenue').get(Auth, controller.getLastSevenDaysRevenue) // Gell Last Seven Days Revenue 
 router.route('/getLast24HrsRevenue').get(Auth, controller.getLast24HrsRevenue) // Gell Last 24Hrs Days Revenue 

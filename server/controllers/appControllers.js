@@ -837,7 +837,7 @@ export async function buyElectricBill(req, res){
       if(parseFloat(amount) > user.acctBalance){
         return res.status(400).json({error: 'INSUFFIENT FUNDS'})
       }
-      
+
       const buyElectricResponse = await axios.post(`
       ${process.env.CK_URL}/APIElectricityV1.aspUserID=${process.env.CK_USER_ID}&APIKey=${process.env.CK_API_KEY}&ElectricCompany=${electricCompany}&MeterType=${userMeterType}&MeterNo=${userMeterNumber}&Amount=${amount}&PhoneNo=${userPhoneNumber}&CallBackURL=${process.CALLBACK_URL}
       `)
@@ -939,6 +939,31 @@ export async function getSpecificTransactionOfAUser(req, res){
     res.status(200).json(transactionDetails)
   } catch (error) {
     console.log(error)
+  }
+}
+
+export async function getAllRevenue(req, res) {
+  try {
+    const allRevenue = await ProfitModel.aggregate([
+      {
+        $group: {
+          _id: null,
+          totalAmount: { $sum: '$amount' },
+          totalCP: { $sum: '$CP' },
+        },
+      },
+      {
+        $project: {
+          _id: 0,
+          totalAmount: 1,
+          totalCP: 1,
+        },
+      },
+    ]);
+    console.log(allRevenue);
+    res.json(allRevenue);
+  } catch (error) {
+    res.status(500).json({ error: 'Internal server error' });
   }
 }
 
