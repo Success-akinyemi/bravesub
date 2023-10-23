@@ -186,6 +186,7 @@ function Dashboard() {
 
 
       <div className='main'>
+        <marquee style={{color: 'red', fontSize: '20px'}}>Hello, WE ARE SORRY FOR THE NETWORK ISSUES YOU HAD WITH OUR SERVICES OVER THE WEEKEND. WE ARE TRULY SORRY FOR THE INCONVINCE(S) IT CAUSED. WE ARE FULLY OPRATIONAL</marquee>
           <h2>We are here for you, please chose a service</h2>
 
         <div className='dashboard_content'>
