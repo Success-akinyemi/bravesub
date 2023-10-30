@@ -184,8 +184,8 @@ function Dashboard() {
       </div>
 
 
-
       <div className='main'>
+      <marquee style={{color: 'green', fontSize: '18px'}}>All Networks going Smoothly...</marquee>
         
           <h2>We are here for you, please chose a service</h2>
 
