@@ -110,9 +110,18 @@ export const airtimeNetworkAndcodes = [
 ]
 
 export const dataNetworkAndcodes = [
+    {network: 'Glo', code: '02', type: ''},
+    {network: 'AIRTEL', code: '04', type: ''},
+    {network: '9Mobile', code: '03', type: ''},
+    {network: 'Smile', code: 'smile-direct', type: ''}
+]
+
+/**
+ * export const dataNetworkAndcodes = [
     {network: 'MTN', code: '01', type: ''},
     {network: 'Glo', code: '02', type: ''},
     {network: 'AIRTEL', code: '04', type: ''},
     {network: '9Mobile', code: '03', type: ''},
     {network: 'Smile', code: 'smile-direct', type: ''}
 ]
+ */
