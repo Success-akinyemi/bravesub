@@ -185,7 +185,7 @@ function Dashboard() {
 
 
       <div className='main'>
-      <marquee style={{color: 'green', fontSize: '18px'}}>MTN data is currently not available due to price change</marquee>
+      <marquee style={{color: 'green', fontSize: '18px'}}>All networks are working smoothly...</marquee>
         
           <h2>We are here for you, please chose a service</h2>
 
