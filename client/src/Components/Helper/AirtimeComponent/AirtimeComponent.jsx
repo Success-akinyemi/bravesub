@@ -20,10 +20,6 @@ function AirtimeComponent() {
     const amount = amountValue
     const email = apiData?.email
 
-    useEffect(()=> {
-      console.log(networkCode)
-    }, [networkCode])
-
     try {
       setIsLoadingAnimation(true)
       const airtime = await buyAirtime({networkCode, userPhoneNumber, amount, email})
