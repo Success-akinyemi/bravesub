@@ -70,6 +70,8 @@ function DataComponent() {
 
        try {
            setIsLoadingAnimation(true)
+
+           //console.log(networkCode,amount,userPhoneNumber,email,buyType,dataPlanCode,cp)
            const data = await buyData({networkCode,amount,userPhoneNumber,email,buyType,dataPlanCode,cp})
         } catch (error) {
             console.log(error)
@@ -86,7 +88,7 @@ function DataComponent() {
               <select className='select1' required onChange={handleNetworkChange}>
                 <option>-- Select Network --</option>
                 { dataNetworkAndcodes.map((item, idx) => 
-                  <option key={idx} value={item.network}>{item.network}</option>
+                  <option key={item.code} value={item.network}>{item.network}</option>
                 )}
               </select>
 
