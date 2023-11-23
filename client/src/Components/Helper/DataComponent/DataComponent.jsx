@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { airtelDataOption, airtimeNetworkAndcodes, dataNetworkAndcodes, gloDataOption, mtnDataOption, nineDataOption, smileDataOption } from '../../../data/NetworkPlan';
+import { airtelDataOption, dataNetworkAndcodes, gloDataOption, mtnDataOption, nineDataOption, smileDataOption } from '../../../data/NetworkPlan';
 import { buyData } from '../../../helpers/helper';
 import './DataComponent.css'
 import '../styling.css'
@@ -20,14 +20,14 @@ function DataComponent() {
     const handleNetworkChange = (e) => {
         const selectedOptionIndex = e.target.selectedIndex;
         setSelectedNetwork(e.target.value);
-        setCode(airtimeNetworkAndcodes[selectedOptionIndex - 1]?.code || '');
+        setCode(dataNetworkAndcodes[selectedOptionIndex - 1 ]?.code || '');
         setAmountValue('');
         setType('');
       };
       
       useEffect(() => {
-        //console.log('Selected Network:', selectedNetwork);
-        //console.log('Code:', code);
+        console.log('Selected Network:', selectedNetwork);
+        console.log('Code:', code);
       }, [selectedNetwork, code]);
       
 
