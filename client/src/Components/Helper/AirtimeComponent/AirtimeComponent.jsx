@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { airtimeNetworkAndcodes } from '../../../data/NetworkPlan'
 import { buyAirtime } from '../../../helpers/helper';
 import './AirtimeComponent.css'
@@ -19,6 +19,10 @@ function AirtimeComponent() {
     const userPhoneNumber = phoneNumber
     const amount = amountValue
     const email = apiData?.email
+
+    useEffect(()=> {
+      console.log(networkCode)
+    }, [networkCode])
 
     try {
       setIsLoadingAnimation(true)

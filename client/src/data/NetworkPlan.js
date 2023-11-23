@@ -1,21 +1,24 @@
-export const mtnDataOption = [
-    { text: '50MB -- 30 days (Corporate)', value: 35, type: 'CG', dataPlan: '50.00', cp: 20},
-    //{ text: '150MB -- 30 days (Corporate)', value: 85, type: 'CG', dataPlan: '150.00', cp: 52 },
-    { text: '500MB -- 30 days (SME)', value: 155, type: 'SME', dataPlan: '212', cp: 128},
-    { text: '1GB -- 30 days (SME)', value: 280, type: 'SME', dataPlan: '207', cp: 256},
-    { text: '2GB -- 30 days (SME)', value: 560, type: 'SME', dataPlan: '208', cp: 512},
-    { text: '3GB -- 30 days (SME)', value: 840, type: 'SME', dataPlan: '209', cp: 768},
-    { text: '5GB -- 30 days (SME)', value: 1400, type: 'SME', dataPlan: '210', cp: 1280},
-    { text: '10GB -- 30 days (SME)', value: 2800, type: 'SME', dataPlan: '247', cp: 2560,}
-]
-
 /**
- * export const mtnDataOption = [
+ export const mtnDataOption = [
+     { text: '50MB -- 30 days (Corporate)', value: 35, type: 'CG', dataPlan: '50.00', cp: 20},
+     //{ text: '150MB -- 30 days (Corporate)', value: 85, type: 'CG', dataPlan: '150.00', cp: 52 },
+     { text: '500MB -- 30 days (SME)', value: 155, type: 'SME', dataPlan: '212', cp: 128},
+     { text: '1GB -- 30 days (SME)', value: 280, type: 'SME', dataPlan: '207', cp: 256},
+     { text: '2GB -- 30 days (SME)', value: 560, type: 'SME', dataPlan: '208', cp: 512},
+     { text: '3GB -- 30 days (SME)', value: 840, type: 'SME', dataPlan: '209', cp: 768},
+     { text: '5GB -- 30 days (SME)', value: 1400, type: 'SME', dataPlan: '210', cp: 1280},
+     { text: '10GB -- 30 days (SME)', value: 2800, type: 'SME', dataPlan: '247', cp: 2560,}
+ ]
+ * 
+ */
+
+
+  export const mtnDataOption = [
     { text: '50MB -- 30 days (Corporate)', value: 35, type: 'CG', dataPlan: '50.00', cp: 20},
     //{ text: '150MB -- 30 days (Corporate)', value: 85, type: 'CG', dataPlan: '150.00', cp: 52 },
     { text: '250MB -- 30 days (Corporate Classic)', value: 90, type: 'SME', dataPlan: '326', cp: 59 },
-    { text: '500MB -- 30 days (SME)', value: 155, type: 'SME', dataPlan: '212', cp: 128},
-    { text: '500MB -- 30 days (Corporate)', value: 150, type: 'SME', dataPlan: '264', cp: 125 },
+    //{ text: '500MB -- 30 days (Corporate)', value: 150, type: 'SME', dataPlan: '264', cp: 118},
+    { text: '500MB -- 30 days (Corporate)', value: 150, type: 'SME', dataPlan: '264', cp: 118 },
     { text: '1GB -- 30 days (Corporate Classic)', value: 270, type: 'SME', dataPlan: '327', cp: 235},
     { text: '1GB -- 30 days (Corporate)', value: 280, type: 'SME', dataPlan: '248', cp: 240 },
     { text: '2GB -- 30days (Corporate Classic)', value: 540, type: 'SME', dataPlan: '328', cp: 470},
@@ -34,7 +37,7 @@ export const mtnDataOption = [
     { text: '20GB -- 30days (Corporate Classic)', value: 5450, type: 'SME', dataPlan: '261', cp: 4800 },
     { text: '25GB -- 30days (Corporate Classic)', value: 6650, type: 'SME', dataPlan: '337', cp: 5875},
 ]
- */
+ 
 
 export const gloDataOption = [
     { text: '200MB -- 14days (SME)', value: 80, type: 'CG', dataPlan: '200', cp: 50},
@@ -119,11 +122,20 @@ export const smileDataOption = [
 
 
 export const airtimeNetworkAndcodes = [
+
+    {network: 'Glo', code: '02'},
+    {network: 'AIRTEL', code: '04'},
+    {network: '9Mobile', code: '03'}
+]
+
+/**
+ * export const airtimeNetworkAndcodes = [
     {network: 'MTN', code: '01'},
     {network: 'Glo', code: '02'},
     {network: 'AIRTEL', code: '04'},
     {network: '9Mobile', code: '03'}
 ]
+ */
 
 export const dataNetworkAndcodes = [
     {network: 'MTN', code: '01', type: ''},
