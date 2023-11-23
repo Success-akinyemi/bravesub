@@ -122,7 +122,7 @@ export const smileDataOption = [
 
 
 export const airtimeNetworkAndcodes = [
-
+    {network: 'MTN', code: '01'},
     {network: 'Glo', code: '02'},
     {network: 'AIRTEL', code: '04'},
     {network: '9Mobile', code: '03'}
