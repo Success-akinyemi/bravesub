@@ -1,4 +1,4 @@
-/**
+
  export const mtnDataOption = [
      { text: '50MB -- 30 days (Corporate)', value: 35, type: 'CG', dataPlan: '50.00', cp: 20},
      //{ text: '150MB -- 30 days (Corporate)', value: 85, type: 'CG', dataPlan: '150.00', cp: 52 },
@@ -9,11 +9,12 @@
      { text: '5GB -- 30 days (SME)', value: 1400, type: 'SME', dataPlan: '210', cp: 1280},
      { text: '10GB -- 30 days (SME)', value: 2800, type: 'SME', dataPlan: '247', cp: 2560,}
  ]
+
+ 
+
+/**
  * 
- */
-
-
-  export const mtnDataOption = [
+export const mtnDataOption = [
     { text: '50MB -- 30 days (Corporate)', value: 35, type: 'CG', dataPlan: '50.00', cp: 20},
     //{ text: '150MB -- 30 days (Corporate)', value: 85, type: 'CG', dataPlan: '150.00', cp: 52 },
     { text: '250MB -- 30 days (Corporate Classic)', value: 90, type: 'SME', dataPlan: '326', cp: 59 },
@@ -37,6 +38,7 @@
     { text: '20GB -- 30days (Corporate Classic)', value: 5450, type: 'SME', dataPlan: '261', cp: 4800 },
     { text: '25GB -- 30days (Corporate Classic)', value: 6650, type: 'SME', dataPlan: '337', cp: 5875},
 ]
+ */
  
 
 export const gloDataOption = [
