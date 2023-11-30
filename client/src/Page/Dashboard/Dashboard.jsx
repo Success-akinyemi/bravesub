@@ -185,7 +185,7 @@ function Dashboard() {
 
 
       <div className='main'>
-      <marquee style={{color: 'green', fontSize: '18px'}}>MTN SME Data is currently working...</marquee>        
+      <marquee style={{color: 'green', fontSize: '18px'}}>MTN SME Data price and GLO price has been reduced enjoy...</marquee>        
           <h2>We are here for you, please chose a service</h2>
 
         <div className='dashboard_content'>

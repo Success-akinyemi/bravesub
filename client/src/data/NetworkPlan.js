@@ -1,13 +1,13 @@
 
  export const mtnDataOption = [
-     { text: '50MB -- 30 days (Corporate)', value: 35, type: 'CG', dataPlan: '50.00', cp: 20},
+     //{ text: '50MB -- 30 days (Corporate)', value: 35, type: 'CG', dataPlan: '50.00', cp: 20},
      //{ text: '150MB -- 30 days (Corporate)', value: 85, type: 'CG', dataPlan: '150.00', cp: 52 },
      { text: '500MB -- 30 days (SME)', value: 155, type: 'SME', dataPlan: '212', cp: 128},
-     { text: '1GB -- 30 days (SME)', value: 280, type: 'SME', dataPlan: '207', cp: 256},
-     { text: '2GB -- 30 days (SME)', value: 560, type: 'SME', dataPlan: '208', cp: 512},
-     { text: '3GB -- 30 days (SME)', value: 840, type: 'SME', dataPlan: '209', cp: 768},
-     { text: '5GB -- 30 days (SME)', value: 1400, type: 'SME', dataPlan: '210', cp: 1280},
-     { text: '10GB -- 30 days (SME)', value: 2800, type: 'SME', dataPlan: '247', cp: 2560,}
+     { text: '1GB -- 30 days (SME)', value: 270, type: 'SME', dataPlan: '207', cp: 239},
+     { text: '2GB -- 30 days (SME)', value: 540, type: 'SME', dataPlan: '208', cp: 478},
+     { text: '3GB -- 30 days (SME)', value: 810, type: 'SME', dataPlan: '209', cp: 717},
+     { text: '5GB -- 30 days (SME)', value: 1350, type: 'SME', dataPlan: '210', cp: 1195},
+     { text: '10GB -- 30 days (SME)', value: 2700, type: 'SME', dataPlan: '247', cp: 2390,}
  ]
 
  
@@ -42,13 +42,13 @@ export const mtnDataOption = [
  
 
 export const gloDataOption = [
-    { text: '200MB -- 14days (SME)', value: 80, type: 'CG', dataPlan: '200', cp: 50},
-    { text: '500MB -- 30 days', value: 130, type: 'SME', dataPlan: '294', cp: 107 },
-    { text: '1GB -- 30 days', value: 250, type: 'SME', dataPlan: '295', cp: 214},
-    { text: '2GB -- 30 days', value: 500, type: 'SME', dataPlan: '296', cp: 428},
-    { text: '3GB -- 30 days', value: 750, type: 'SME', dataPlan: '297', cp: 642 },
-    { text: '5GB -- 30 days', value: 1250, type: 'SME', dataPlan: '298', cp: 1070},
-    { text: '10GB -- 30 days', value: 2500, type: 'SME', dataPlan: '299', cp: 2140},
+    //{ text: '200MB -- 14days (SME)', value: 80, type: 'CG', dataPlan: '200', cp: 50},
+    { text: '500MB -- 30 days', value: 130, type: 'SME', dataPlan: '294', cp: 103 },
+    { text: '1GB -- 30 days', value: 240, type: 'SME', dataPlan: '295', cp: 205},
+    { text: '2GB -- 30 days', value: 480, type: 'SME', dataPlan: '296', cp: 410},
+    { text: '3GB -- 30 days', value: 720, type: 'SME', dataPlan: '297', cp: 615 },
+    { text: '5GB -- 30 days', value: 1200, type: 'SME', dataPlan: '298', cp: 1025},
+    { text: '10GB -- 30 days', value: 2400, type: 'SME', dataPlan: '299', cp: 2050},
 ]
 
 export const airtelDataOption = [
