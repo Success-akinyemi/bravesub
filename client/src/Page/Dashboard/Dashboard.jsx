@@ -185,7 +185,7 @@ function Dashboard() {
 
 
       <div className='main'>
-          {/**<marquee style={{color: 'green', fontSize: '18px'}}>MTN SME Data price and GLO price has been reduced enjoy...</marquee> */}        
+          <marquee style={{color: 'green', fontSize: '18px'}}>MTN SME Data is currently availble. There is little changes in MTN Data price we are truly sorry for the inconvience as this is cause due to scacity of the product.</marquee>      
           <h2>We are here for you, please chose a service</h2>
 
         <div className='dashboard_content'>
